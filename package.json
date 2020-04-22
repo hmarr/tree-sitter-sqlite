@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-sqlite",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "node-gyp": "^6.1.0",
+    "tree-sitter-cli": "^0.16.5"
+  },
+  "dependencies": {
+    "nan": "^2.14.0"
+  }
+}

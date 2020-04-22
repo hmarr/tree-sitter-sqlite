@@ -1,0 +1,282 @@
+[
+  {
+    "type": "expr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "numeric_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "from_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "k_from",
+          "named": true
+        },
+        {
+          "type": "table_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "numeric_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "result_column",
+    "named": true,
+    "fields": {
+      "alias": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "k_as",
+          "named": true
+        },
+        {
+          "type": "star",
+          "named": true
+        },
+        {
+          "type": "table_dot_star",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "result_column_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "result_column",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "select_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "from_clause",
+          "named": true
+        },
+        {
+          "type": "k_all",
+          "named": true
+        },
+        {
+          "type": "k_distinct",
+          "named": true
+        },
+        {
+          "type": "k_select",
+          "named": true
+        },
+        {
+          "type": "result_column_list",
+          "named": true
+        },
+        {
+          "type": "where_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "select_stmt",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "star",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "table_dot_star",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "table_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "table_name",
+    "named": true,
+    "fields": {
+      "schema": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "table": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "where_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "k_where",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "\"\"",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "`",
+    "named": false
+  },
+  {
+    "type": "``",
+    "named": false
+  },
+  {
+    "type": "k_all",
+    "named": true
+  },
+  {
+    "type": "k_as",
+    "named": true
+  },
+  {
+    "type": "k_distinct",
+    "named": true
+  },
+  {
+    "type": "k_from",
+    "named": true
+  },
+  {
+    "type": "k_select",
+    "named": true
+  },
+  {
+    "type": "k_where",
+    "named": true
+  }
+]
